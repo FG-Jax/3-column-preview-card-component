@@ -25,6 +25,7 @@ main{
 }
 
 .component{
+    scale: 125%;
     width: min(90%, 700px);
     height: 400px;
     border-radius: 10px;
@@ -117,8 +118,11 @@ main{
 }
 
 
-@media (max-width: 400px){
+@media (max-width: 600px){
     .component{
+        position: relative;
+        transform: translateY(-100px);
+        scale: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,450px);
